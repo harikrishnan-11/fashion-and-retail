@@ -30,5 +30,23 @@
     },3000)
 
 
-let arrow1  
+let arrow1=document.querySelector(".arr1") 
+let arrow2=document.querySelector(".arr2") 
 
+arrow1.addEventListener("click",()=>{
+     index++
+        if(index>=image.length){
+            index=0
+        }
+        hero.style.backgroundImage=`url(${image[index]})`
+
+})
+
+arrow2.addEventListener("click",()=>{
+     index--
+        if(index>0){
+            index=image.length
+        }
+        hero.style.backgroundImage=`url(${image[index]})`
+
+})
