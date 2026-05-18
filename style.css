@@ -166,8 +166,24 @@
       color: white;
       background: black;
       font-weight: bold;
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
     }
+
+    .arr1{  
+      top: 50%;
+      padding-left: 8px;
+      left: 40px;
+    }
+
+      .arr2{
+      top: 50%;
+      right: 40px;
+    }
+
+
  
     .hero-content{
         display: none;
